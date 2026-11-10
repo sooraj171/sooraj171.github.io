@@ -157,6 +157,15 @@ h1, h2, h3, p { margin-top: 0; }
   animation: rise 0.9s ease both;
 }
 
+.hero-content::before {
+  content: "";
+  position: absolute;
+  inset: 40px -40px 20px -48px;
+  background: linear-gradient(90deg, rgba(230, 236, 240, 0.94) 0%, rgba(230, 236, 240, 0.82) 58%, rgba(230, 236, 240, 0) 100%);
+  z-index: -1;
+  pointer-events: none;
+}
+
 .brand-hero {
   margin: 0 0 18px;
   font-family: var(--font-display);
